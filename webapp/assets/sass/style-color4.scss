@@ -1,0 +1,294 @@
+$color1 : #fff;
+$color2 : #f85e54;
+$white : #fff;
+$black : #0d0d0d;
+$trans : transparentize($white,0.9);
+$gray : #c0c0c0;
+$trans-black : transparentize($black,0.2);
+$sans : "Glacial Indifference", "Futura LT","Proxima Nova", "Montserrat", "Open Sans", "Roboto" , "Helvetica", sans-serif;
+/* Alternative colors */
+/* menu */
+.menu-icon .bars .bar1, 
+.menu-icon .bars .bar2, 
+.menu-icon .bars .bar3{
+	background: $color2; 
+}
+
+/* Home page */
+.section-home .content.anim .c-text:before{
+	background: $white;
+}
+.section-home .content .c-text .h-btns .btn{
+	color: $gray;
+	border-color: $gray;
+	&:before{
+		background: transparentize($gray,0.9);
+	}
+	&:hover{
+		color: $color2;
+		border-color: $color2;
+		&:before{
+			background: $white;
+		}
+	}
+}
+.section-home .content .c-text{
+	.header{
+		h2{
+			color: $color2;
+		}
+		h3{
+			color: $gray;
+		}
+	}
+	.desc{
+		p{
+			color: $black;
+		}
+	}
+	.home-btns{
+		.btn{
+			color: $color2;
+			&:hover{
+				color: $color2;
+			}
+		}
+	}
+}
+/* main page */
+ 
+.section .content {
+	.c-left{
+		background: $color2;
+		.c-wrapper{
+			h2{
+				color: $white;
+			}
+			h3{
+				color: $color1; 
+			}
+			p{
+				color: $white;
+			}
+			.item-detail{
+				h4{
+					color: $white;
+				}
+			}
+		}
+	}
+}
+.section .content .gallery-slides .c-gallery li h3, 
+.section .content .gallery-slides .c-gallery li .title,
+.section .content .gallery-slides .c-gallery li .desc p,
+.section .content .c-features-list li h3, 
+.section .content .c-features-list li h3, 
+.section .content .c-features-list li .title,
+.section .content .c-features-list li .desc p,
+.section .content .c-wrapper .slide-nav-container .items-button a:hover, .section .content .c-wrapper .items-nav-container .items-button a:hover{
+	color: $white;
+}
+.section .content .c-wrapper .swiper-pagination-bullet{
+	background: rgba(255, 255, 255, 0.5);
+}
+.section .content .c-features-list li h4{
+	color: rgba(255, 255, 255, 0.5);
+}
+.section .content .c-left .c-wrapper .h-icon,
+.section-contact .contact-footer .social-cont .socials li a{
+	color: $white;
+}
+.section .content .c-wrapper .slide-nav-container .items-button a, 
+.section .content .c-wrapper .items-nav-container .items-button a,
+.section-contact .content .c-form .form .fields label,
+.site-footer .note .marked{
+	color: $white;
+}
+.section .content .items-slide .swiper-wrapper .swiper-slide .desc:before, 
+.section .content .items-slide .swiper-wrapper .swiper-slide .desc:after,
+.section .content .c-wrapper .slide-nav-container .items-button:after, 
+.section .content .c-wrapper .items-nav-container .items-button:after,
+.section-contact .contact-footer .social-cont .socials li:after{
+	background: $white;
+}
+.section-contact .contact-footer .reg-form-cont .form input.input,
+.section-contact .content .c-form .form .fields input{
+	border-bottom-color: $white;
+}
+.section .content .c-wrapper .swiper-pagination-bullet:hover, .section .content .c-wrapper .swiper-pagination-bullet.swiper-pagination-bullet-active{
+	background: $white;
+}
+.section .content .c-wrapper .swiper-pagination-bullet:hover:before, .section .content .c-wrapper .swiper-pagination-bullet.swiper-pagination-bullet-active:before{
+	border-color: $white;
+}
+a,
+a:hover,
+a:focus,
+.section-contact .contact-footer .social-cont .socials li a:hover{
+	color: transparentize($white,0.5);
+}
+
+/* Light left pane */
+.section.js-left-light{
+	.content {
+		.c-left{
+			background: $white;
+			.c-wrapper{
+				.h-icon{
+					color: $color2;
+				}
+				h2{
+					color: $color2;
+				}
+				h3{
+					color: $gray; 
+				}
+				p{
+					color: $black;
+				}
+				.item-detail{
+					h4{
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+	&.section-contact {
+		.contact-footer .social-cont .socials li:after{
+			background: $color2;
+		}
+	}
+	a,
+	.content .c-left .c-wrapper .h-icon, 
+	.contact-footer .social-cont .socials li a{
+		color: $color2;
+		&:hover{
+			color: $color2;
+		}
+	}
+	.send_email_form .magic-btn{
+		color: $color2;
+		&:hover{
+			color: $black;
+		}
+	}
+	.contact-footer .reg-form-cont .form input.input, 
+	.content .c-form .form .fields input{
+		border-bottom-color: $color2;
+	}
+}
+
+/* gallery / item list */
+.section .content .gallery-slides .c-gallery li .item-desc,
+.section .content .items-slide .swiper-wrapper .swiper-slide .item-desc{
+	position: relative;
+	h4,
+	.desc p{
+		color: $black;
+		z-index: 1;
+		position: relative;
+	}
+	h3, .title{
+		color: $color2;
+	}
+	&:before{
+		position: absolute;
+		background: #fff;
+		content: "";
+		$margin : -16px;
+		top: $margin;
+		bottom: $margin;
+		left: -8px;
+		right: -8px;
+		left: $margin;
+		right: $margin;
+	}
+}
+/* Footer */
+
+body.left-light{
+	/*.s-footer {
+		a{
+			color: $white;
+			.icon{
+				border: 1px solid $white;
+				&:before{
+					background: transparentize($white,0.9);
+				}
+				&:after{
+					background: $white;
+				}
+			}
+
+			&:hover{
+				color: transparentize($white,0.6);
+				.icon{
+					&:before{
+						background: transparentize($white,0.7);
+					}
+				}
+			}
+		}
+	}*/
+}
+
+/* Buttons */
+.magic-btn{
+	color: $color1;
+}
+.send_email_form .magic-btn{
+	color: $white;
+}
+body.left-light{
+	.magic-btn-black{
+		color: $color2;
+		&:hover{
+			color: $color2;
+		}
+	}
+	.site-footer .note .marked{
+		color: $color2;
+	}
+}
+.magic-btn-black{
+	color: $white;
+	&:hover{
+		color: $white;
+	}
+}
+/* Nav dots */
+#fp-nav ul li a span.title{
+	color: $color1;
+}
+body.left-light #fp-nav ul li a.active span, 
+body.left-light #fp-nav ul li a.active:hover span,
+#fp-nav ul li a.active span, 
+#fp-nav ul li a.active:hover span{
+	background: $color1;
+}
+
+/* Fonts */
+.section-home .content .c-text .header h2,
+.section .content .c-left .c-wrapper h2,
+.section .content .c-right .c-wrapper .c-header h2,
+.section .content .c-features-list li h3, 
+.section .content .c-features-list li .title,
+.section .content .gallery-slides .c-gallery li h3,
+.section .content .gallery-slides .c-gallery li .title{
+	font-family: $sans;
+	font-weight: normal;
+}
+.section-home .content .c-text .header h3,
+.section-home .content .c-text .desc p,
+.site-footer .note p,
+.s-footer a,
+.header-top .logo-wrapper .logo .title,
+.menu-links .links li a,
+.section .content .c-left .c-wrapper p,
+.section .content .c-right .c-wrapper .c-header p,
+.section .content .c-features-list li .desc p,
+.section .content .gallery-slides .c-gallery li .desc p{
+	font-family: "Open Sans";
+	font-weight: 300;
+}

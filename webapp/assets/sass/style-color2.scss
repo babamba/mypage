@@ -1,0 +1,208 @@
+$color1 : #ff9800;
+$white : #fff;
+$black : #0d0d0d;
+$trans : transparentize($white,0.9);
+$trans-black : transparentize($black,0.2);
+/* Alternative colors */
+/* menu */
+.menu-icon .bars .bar1, 
+.menu-icon .bars .bar2, 
+.menu-icon .bars .bar3{
+	background: $color1; 
+}
+
+/* Home page */
+.section-home .content.anim .c-text:before{
+	background: $trans;
+}
+.section-home .content .c-text .h-btns .btn{
+	color: $white;
+	border-color: $white;
+	&:before{
+		background: $trans;
+	}
+	&:hover{
+		color: $black;
+		&:before{
+			background: $white;
+		}
+	}
+}
+.section-home .content .c-text{
+	.header{
+		h2{
+			color: $white;
+		}
+		h3{
+			color: rgba(255, 255, 255, 0.5);
+		}
+	}
+	.desc{
+		p{
+			color: $white;
+		}
+	}
+	.home-btns{
+		.btn{
+			color: $white;
+			.arrow-icon{
+				background: $color1;
+				&:before{
+					border-bottom-color: $color1;
+				}
+				&:after{
+					border-top-color: $color1;
+				}
+			}
+			&:hover{
+				color: $white;
+			}
+			&:before,
+			&:after{
+				background: $color1;
+			}
+			.txt{
+				&:before,
+				&:after{
+					background: $color1;
+				}
+			}
+		}
+	}
+}
+/* main page */
+body.left-light{
+	.header-top{
+		.logo-wrapper{
+			.title{
+				color: $white;
+				border-top-color: currentColor;
+			}
+		}
+	}
+}
+body.left-light .note p{
+	color: $white;
+}
+body.left-light{
+	.note{
+		p{
+			@media(min-width: 601px){
+				color: $white;
+			}
+		}
+	}
+}
+.section .content {
+	.c-left{
+		background: $trans-black;
+		.c-wrapper{
+			h2{
+				color: $white;
+			}
+			h3{
+				color: rgba(255, 255, 255, 0.5);
+			}
+			p{
+				color: $white;
+			}
+			.item-detail{
+				h4{
+					color: $white;
+				}
+			}
+		}
+	}
+}
+.section .content .gallery-slides .c-gallery li h3, 
+.section .content .gallery-slides .c-gallery li .title,
+.section .content .gallery-slides .c-gallery li .desc p,
+.section .content .c-features-list li h3, 
+.section .content .c-features-list li .title,
+.section .content .c-features-list li .desc p,
+.section .content .c-wrapper .slide-nav-container .items-button a:hover, .section .content .c-wrapper .items-nav-container .items-button a:hover{
+	color: $white;
+}
+.section-contact .contact-footer .social-cont .socials li a{
+	color: $white;
+}
+.section .content .c-wrapper .slide-nav-container .items-button a, 
+.section .content .c-wrapper .items-nav-container .items-button a,
+.section .content .c-left .c-wrapper .h-icon,
+.section-contact .content .c-form .form .fields label,
+.site-footer .note .marked{
+	color: $color1;
+}
+.section .content .items-slide .swiper-wrapper .swiper-slide .desc:before, 
+.section .content .items-slide .swiper-wrapper .swiper-slide .desc:after,
+.section .content .c-wrapper .slide-nav-container .items-button:after, .section .content .c-wrapper .items-nav-container .items-button:after,
+.section-contact .contact-footer .social-cont .socials li:after{
+	background: $color1;
+}
+.section-contact .content .c-form .form .fields input{
+	border-bottom-color: $color1;
+}
+.section .content .c-wrapper .swiper-pagination-bullet:hover, .section .content .c-wrapper .swiper-pagination-bullet.swiper-pagination-bullet-active{
+	background: $color1;
+}
+.section .content .c-wrapper .swiper-pagination-bullet:hover:before, .section .content .c-wrapper .swiper-pagination-bullet.swiper-pagination-bullet-active:before{
+	border-color: $color1;
+}
+a,
+a:hover,
+a:focus{
+	color: $color1;
+}
+
+
+/* Footer */
+
+body.left-light{
+	.s-footer {
+		a{
+			color: $white;
+			.icon{
+				border: 1px solid $white;
+				&:before{
+					background: transparentize($white,0.9);
+				}
+				&:after{
+					background: $white;
+				}
+			}
+
+			&:hover{
+				color: transparentize($white,0.6);
+				.icon{
+					&:before{
+						background: transparentize($white,0.7);
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Buttons */
+.magic-btn{
+	color: $color1;
+	&:hover{
+		color: $color1;
+	}
+}
+.magic-btn-black{
+	color: $white;
+	&:hover{
+		color: $color1;
+	}
+}
+/* Nav dots */
+#fp-nav ul li a span.title{
+	color: $color1;
+}
+body.left-light #fp-nav ul li a.active span, 
+body.left-light #fp-nav ul li a.active:hover span,
+#fp-nav ul li a.active span, 
+#fp-nav ul li a.active:hover span{
+	background: $color1;
+}

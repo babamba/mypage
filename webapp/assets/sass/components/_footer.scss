@@ -1,0 +1,127 @@
+@import "../mixins";
+@import "../variables";
+
+.site-footer{
+	position: relative;
+	margin-top: 32px;
+	@media(min-width: 601px){
+		position: fixed;
+	}
+	z-index: 10;
+	.note{
+		position: relative;
+		left: 0;
+		bottom: 0;
+		float: left;
+		margin-left: 16px;
+		margin-bottom: 18px;
+		@media(min-width: 601px){
+			margin-left: 48px;
+			margin-bottom: 20px;
+			position: fixed;
+		}
+		p{
+			font-size: 14px;
+			font-family: $sans;
+			color: #fff;
+			margin-bottom: 0;
+			transition: 0.3s;
+		}
+		.marked{
+			color: $color1;
+		}
+	}
+	.contact{
+		float: right;
+		position: relative;
+		right: 16px;
+		bottom: 16px;
+		@media(min-width: 601px){
+			position: fixed;
+			right: 48px;
+			bottom: 24px;
+		}
+		left: auto;
+		&.s-right{
+			float: left;
+			right: auto;
+			left: 0;
+		}
+		.links{
+			
+		}
+		.socials{
+			display: block;
+			float: left;
+			li{
+				float: left;
+				margin-left: 8px;
+				position: relative;
+				
+				a{
+					//display: inline-block;
+					display: table-cell;
+					vertical-align: middle;
+					width: 32px;
+					height: 32px;
+					text-align: center;
+					border-radius: 20px;
+					border: 1px solid $white;
+					border-color: $medium-gray;
+					color: $medium-gray;
+					@media(min-width: 801px){
+						border-color: $white;
+						color: $white;
+					}
+					//color: $color1;
+					line-height: 1;
+					//padding-top: 8px;
+					font-size: 16px;
+					position: relative;
+					&:before{
+						position: absolute;
+						z-index: -1;
+						content: "";
+						transform: rotate(0deg);
+						background: transparentize($medium-gray,0.9);
+						@media(min-width: 801px){
+							background: transparentize($white,0.9);
+						}
+						//background: transparentize($color1,0.9);
+						top: 3px;
+						left: 3px;
+						bottom: 3px;
+						right: 3px;
+						border-radius: 40px;
+						transition: 0.3s;
+					}
+					&:hover{
+						color: $black;
+						&:before{
+							top: 0;left: 0;right: 0;bottom: 0;
+							background: $white;
+						}
+						//background: $white;
+					}
+				}
+			}
+		}
+	}
+}
+
+body.left-light{
+	.note{
+		p{
+			//text-shadow: 0 0 1px $dark-gray, 0 0 2px $dark-gray;
+			@media(min-width: 601px){
+				color: $black;
+			}
+//			@media(min-width: 801px){
+//				text-shadow: none;
+//			}
+			@media(max-width: 801px){
+				color: $medium-gray;
+			}
+		}
+	}
+}

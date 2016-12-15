@@ -1,0 +1,12 @@
+@import "./mixins";
+@import "./variables";
+
+.magic-btn{
+	@include magic-button($color1, $color1, 1px);
+}
+.magic-btn-black{
+	@include magic-button($black, $black, 1px);
+	&:hover{
+		color: $black;
+	}
+}

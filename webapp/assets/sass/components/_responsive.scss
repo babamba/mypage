@@ -1,0 +1,25 @@
+@import "../mixins";
+@import "../variables";
+
+// ipad and tablet
+@media(max-width: 1025px){
+	
+}
+// ipad and tablet
+@media(min-width: 802px){
+	.fp-scrollable ,
+	.slimScrollDiv{
+		height: auto !important;
+	}
+}
+
+// phone
+@media(max-width: 601px){
+	.slimScrollBar{
+		display: none!important;
+	}
+	.fp-scrollable,
+	.slimScrollDiv{
+		height: auto !important;
+	}
+}
